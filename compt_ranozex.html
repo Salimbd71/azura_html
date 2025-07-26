@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Ranozex- Comppititor Brands</title>
+<style>
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 8px; border: 1px solid #ddd; text-align: left; }
+    th { background-color: teal; cursor: pointer; }
+    .sort-block { margin: 15px 0; }
+</style>
+  </head>
+  <body>
+	<h1>Ranozex- Comppititor Brands</h1>
+
+	<div class="sort-block">
+	  <strong>Sort By:</strong>
+	  <label><input type="radio" name="sort" value="name" checked> Name</label>
+	  <label><input type="radio" name="sort" value="price"> Price</label>
+	  <label><input type="radio" name="sort" value="popularity"> Popularity</label>
+	</div>
+
+	<table id="brand-table">
+	  <thead>
+		<tr>
+		  <th data-col="name">Brand</th>
+		  <th data-col="strength">Strength</th>
+		  <th data-col="company">Company</th>
+		  <th data-col="price">Price</th>
+		</tr>
+	  </thead>
+	  <tbody>
+		<tr data-popularity="7">
+		  <td>Antogin ER</td>
+		  <td>500 mg</td>
+		  <td>Renata PLC</td>
+		  <td>৳16.00</td>
+		</tr>
+		<tr data-popularity="5">
+		  <td>Ralozine SR</td>
+		  <td>500 mg</td>
+		  <td>Incepta Pharmaceuticals Ltd.</td>
+		  <td>৳16.00</td>
+		</tr>
+		<tr data-popularity="4">
+		  <td>Ranocor ER</td>
+		  <td>500 mg</td>
+		  <td>Popular Pharmaceuticals Ltd.</td>
+		  <td>৳16.00</td>
+		</tr>
+		<tr data-popularity="1">
+		  <td>Ranola</td>
+		  <td>500 mg</td>
+		  <td>General Pharmaceuticals Ltd.</td>
+		  <td>৳16.05</td>
+		</tr>
+		<tr data-popularity="2">
+		  <td>Ranolin XR</td>
+		  <td>500 mg</td>
+		  <td>Square Pharmaceuticals PLC</td>
+		  <td>৳16.05</td>
+		</tr>
+		<tr data-popularity="8">
+		  <td>Ranovent ER</td>
+		  <td>500 mg</td>
+		  <td>Ibn Sina Pharmaceuticals Ltd.</td>
+		  <td>৳15.00</td>
+		</tr>
+		<tr data-popularity="3">
+		  <td>Ranozex</td>
+		  <td>500 mg</td>
+		  <td>Sun Pharmaceutical (Bangladesh) Ltd.</td>
+		  <td>৳16.00</td>
+		</tr>
+		<tr data-popularity="6">
+		  <td>Renexin XR</td>
+		  <td>500 mg</td>
+		  <td>Opsonin Pharma Ltd.</td>
+		  <td>৳16.00</td>
+		</tr>
+	  </tbody>
+	</table>
+
+<script>
+    document.querySelectorAll('input[name="sort"]').forEach(radio => {
+      radio.addEventListener('change', () => {
+        const key = radio.value;
+        const rows = Array.from(document.querySelectorAll('#brand-table tbody tr'));
+        rows.sort((a, b) => {
+          let va, vb;
+          if (key === 'name') {
+            va = a.querySelector('td:nth-child(1)').textContent.trim();
+            vb = b.querySelector('td:nth-child(1)').textContent.trim();
+          } else if (key === 'price') {
+            va = parseFloat(a.querySelector('td:nth-child(4)').textContent.replace(/[^\d.]/g, ''));
+            vb = parseFloat(b.querySelector('td:nth-child(4)').textContent.replace(/[^\d.]/g, ''));
+          } else if (key === 'popularity') {
+            va = parseInt(a.getAttribute('data-popularity'), 10);
+            vb = parseInt(b.getAttribute('data-popularity'), 10);
+          }
+          return va > vb ? 1 : va < vb ? -1 : 0;
+        });
+        const tbody = document.querySelector('#brand-table tbody');
+        tbody.innerHTML = '';
+        rows.forEach(row => tbody.appendChild(row));
+      });
+    });
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Developer</title>
+<style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(to bottom, #ffffff, #e0f7e9);
+        color: #333;
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        padding: 20px;
+      }
+      .container {
+        width: 100%;
+        max-width: 450px;
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        padding: 25px 20px;
+        text-align: center;
+      }
+      .profile-img {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #4CAF50;
+        margin: 0 auto 20px;
+      }
+      h2 {
+        margin-bottom: 13px;
+        color: #2e7d32;
+      }
+      .social-links {
+        list-style: none;
+        padding: 0;
+        margin-top: 19px;
+      }
+      .social-links li {
+        display: flex;
+        align-items: center;
+        background: #f8f9fa;
+        margin: 10px 0;
+        padding: 10px 12px;
+        border-radius: 10px;
+        transition: background 0.3s;
+      }
+      .social-links li:hover {
+        background: #e0f2f1;
+      }
+      .social-links img {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+      }
+      .social-links a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        font-size: 16px;
+      }
+      .fb-container {
+        margin-top: 25px;
+      }
+
+      @media screen and (max-width: 480px) {
+        .container {
+          border-radius: 0;
+          box-shadow: none;
+          max-width: 100%;
+          padding: 20px 15px;
+        }
+      }
+</style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="salim.jpg" alt="Developer Photo" class="profile-img" />
+      <h2>Md. Salim Hossain</h2>
+      <ul class="social-links">
+        <li><img src="https://cdn-icons-png.flaticon.com/512/724/724664.png"><a href="tel:+8801737462871">01737462871</a></li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png"><a href="mailto:salimbd.ga@gmail.com">salimbd.ga@gmail.com</a></li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png"><a href="https://www.facebook.com/salim.naogaon">Facebook</a></li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"><a href="https://www.youtube.com/@TechZone_71">YouTube</a></li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"><a href="https://www.instagram.com/salim.naogaon">Instagram</a></li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png"><a href="https://www.linkedin.com/in/salimnaogaon">LinkedIn</a></li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/841/841364.png"><a href="https://sites.google.com/view/salim71">Website</a></li>
+      </ul>
+
+      <div class="fb-container">
+        <div id="fb-root"></div>
+<script async defer crossorigin="anonymous"
+          src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0">
+</script>
+        <div class="fb-page"
+          data-href="https://www.facebook.com/profile.php?id=100093074936927"
+          data-tabs="timeline"
+          data-width="340"
+          data-height=""
+          data-small-header="false"
+          data-adapt-container-width="true"
+          data-hide-cover="false"
+          data-show-facepile="true">
+          <blockquote cite="https://www.facebook.com/profile.php?id=100093074936927" class="fb-xfbml-parse-ignore">
+            <a href="https://www.facebook.com/profile.php?id=100093074936927">Follow on Facebook</a>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

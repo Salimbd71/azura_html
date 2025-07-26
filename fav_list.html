@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Favourite List</title>
+	<meta charset="utf-8" />
+<style>
+    body { font-family: Arial; padding: 20px; }
+    h1 { color: #333; }
+    ul { list-style: none; padding: 0; }
+    li { background: #eee; margin: 5px 0; padding: 10px; border-radius: 4px; }
+</style>
+  </head>
+  <body>
+	<h1>Your Favourites</h1>
+	<ul id="favList"></ul>
+
+<script type="text/javascript">
+    function loadFavourites(jsonData) {
+      var list = JSON.parse(jsonData);
+      var container = document.getElementById("favList");
+      list.forEach(function(item) {
+        var title = item.split("##")[0];
+        var url = item.split("##")[1];
+        var li = document.createElement("li");
+        li.innerHTML = '<a href="' + url + '" target="_blank">' + title + '</a>';
+        container.appendChild(li);
+      });
+    }
+</script>
+  </body>
+</html>
