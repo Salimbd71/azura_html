@@ -1,0 +1,108 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Remicron MR - Gliclazide</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #00796B;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      padding: 16px;
+    }
+    h2 {
+      color: #00796B;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 4px;
+      margin-top: 24px;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    .price {
+      background: #E0F2F1;
+      padding: 12px;
+      border-left: 5px solid #00796B;
+      margin-top: 12px;
+    }
+    .warning {
+      background: #FFF3CD;
+      padding: 10px;
+      border-left: 5px solid #FFC107;
+      margin-top: 12px;
+      font-size: 14px;
+    }
+    ul {
+      margin-top: 8px;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body><header>
+  <h1>Remicron MR (Gliclazide) - 30 & 60 mg</h1>
+  <p>Sun Pharmaceutical (Bangladesh) Ltd.</p>
+</header>
+
+<div class="container">  
+<div class="section price">
+    <strong>Unit Price:</strong> 8.00, 12.00 <br/>
+    <strong>Strip Price:</strong> ৸80.00, 120.00 (8 x 30: 240.00 & 12.00 x 30: 360.00)
+  </div>  
+  <div class="section">
+    <h2>Indications</h2>
+    <p>Used for type 2 diabetes when diet, exercise and weight loss do not suffice.</p>
+  </div>  
+  <div class="section">
+    <h2>Pharmacology</h2>
+    <p>Stimulates insulin release from pancreatic beta cells and reduces hepatic glucose output.</p>
+  </div>  <div class="section">
+    <h2>Dosage & Administration</h2>
+    <p>Recommended dose: 1 to 4 tablets (30-120 mg) once daily with breakfast. Do not chew or crush. Always take after eating.</p>
+    <ul>
+      <li>If you forget a dose, take the next dose at the usual time.</li>
+      <li>Do not take a double dose.</li>
+      <li>In overdose, seek immediate medical help — symptoms include low blood sugar.</li>
+    </ul>
+  </div>  <div class="section">
+    <h2>Interactions</h2>
+    <p>May interact with insulin, antibiotics, antifungals, beta-blockers, corticosteroids, etc. Avoid alcohol. Monitor blood sugar closely.</p>
+  </div>  <div class="section">
+    <h2>Contraindications</h2>
+    <ul>
+      <li>Type 1 diabetes</li>
+      <li>Severe kidney or liver disease</li>
+      <li>During breastfeeding</li>
+      <li>Known allergy to sulfonylureas</li>
+    </ul>
+  </div>  <div class="section">
+    <h2>Side Effects</h2>
+    <p>Common: Hypoglycemia. Others: liver issues, rash, digestive discomfort, visual disturbance.</p>
+  </div>  <div class="section">
+    <h2>Pregnancy & Lactation</h2>
+    <p>Not recommended during pregnancy or breastfeeding.</p>
+  </div>  <div class="section">
+    <h2>Precautions & Warnings</h2>
+    <p>Monitor blood glucose regularly. Risk of hypoglycemia is high during early treatment and fasting. Always carry sugar with you.</p>
+  </div>  <div class="section">
+    <h2>Storage</h2>
+    <p>Store below 30°C, protect from light and moisture. Keep out of children’s reach.</p>
+  </div>  <div class="section">
+    <h2>General Instructions</h2>
+    <ul>
+      <li>Take before breakfast daily</li>
+      <li>Do not miss meals</li>
+      <li>Carry sugary snack to manage hypoglycemia</li>
+      <li>Follow doctor’s instructions strictly</li>
+    </ul>
+  </div></div></body>
+</html>
