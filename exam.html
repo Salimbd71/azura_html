@@ -2,34 +2,42 @@
 <html lang="bn">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>পরীক্ষার নিয়মাবলী</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f9f9f9;
+        html, body {
             margin: 0;
             padding: 0;
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
         }
         header {
             background-color: #4CAF50;
             color: white;
-            padding: 20px 0;
+            padding: 20px 10px;
             text-align: center;
+            flex-shrink: 0;
         }
         main {
-            max-width: 800px;
-            margin: 30px auto;
+            flex: 1;
             padding: 20px;
             background-color: white;
+            margin: 10px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            overflow-y: auto;
         }
         h2 {
             color: #333;
         }
         ul {
             line-height: 1.8;
+            padding-left: 20px;
         }
         .mandatory {
             color: red;
@@ -42,13 +50,26 @@
             background-color: #4CAF50;
             color: white;
             padding: 15px;
-            margin-top: 30px;
+            margin-top: 20px;
             text-decoration: none;
             font-size: 18px;
             border-radius: 5px;
+            box-sizing: border-box;
         }
         .start-btn:hover {
             background-color: #45a049;
+        }
+
+        /* মোবাইল ফ্রেন্ডলি টেক্সট এবং স্কেল */
+        @media screen and (max-width: 600px) {
+            main {
+                margin: 5px;
+                padding: 15px;
+            }
+            .start-btn {
+                font-size: 16px;
+                padding: 12px;
+            }
         }
     </style>
 </head>
@@ -61,14 +82,13 @@
         <ul>
             <li>পরীক্ষা দেওয়ার আগে আপনার ইন্টারনেট সংযোগ স্থিতিশীল আছে কিনা পরীক্ষা করুন।</li>
             <li>প্রতিটি প্রশ্নের জন্য নির্দিষ্ট সময় থাকবে। সময় শেষ হলে স্বয়ংক্রিয়ভাবে পরবর্তী প্রশ্নে চলে যাবে।</li>
-            <li>একজন একাধিকবার পরীক্ষায় অংশ নিতে পারবেন না।</li>
+            <li>একজন শিক্ষার্থী একাধিকবার পরীক্ষায় অংশ নিতে পারবেন না।</li>
             <li>কোনো ধরনের সহায়তা নেওয়া বা নকল করা সম্পূর্ণভাবে নিষিদ্ধ।</li>
             <li>প্রশ্নপত্র পড়ে মনোযোগ দিয়ে উত্তর দিন।</li>
-            
+            <li>পরীক্ষা শেষ হলে "Submit" বাটনে ক্লিক করে উত্তর জমা দিন।</li>
             <li>পরীক্ষার সময় ফরমটি বন্ধ বা রিফ্রেশ করবেন না।</li>
             <li>প্রয়োজন হলে শুধুমাত্র নির্ধারিত সময়ের মধ্যে ফরম পূরণ করুন।</li>
-            <li class="mandatory">* দেওয়া গুলো বাধ্যতামূলক পূরণ করতে হবে।</li>
-			<li>পরীক্ষা শেষ হলে "Submit" বাটনে ক্লিক করে উত্তর জমা দিন।</li>
+            <li class="mandatory">*</li> দেওয়া গুলো বাধ্যতামূলক পূরণ করতে হবে।
         </ul>
         <a href="https://forms.gle/3fWEpL4aqyttsmmw7" target="_blank" class="start-btn">পরীক্ষা শুরু করুন</a>
     </main>
